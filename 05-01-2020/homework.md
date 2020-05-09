@@ -142,11 +142,9 @@ A function argument is a variable that a function requires to be run.
 
 - Will let you access individual items in an array.
 
-
 **How does the this keyword work with arrow functions**
 
 - The 'this' keyword scope changes in an arrow function. The arrow function does not create it's own 'this'. 'this', instead accesses the 'this' of the enclosing body.
-
 
 **How do you pass a javascript object as function arguments by leveraging deconstruction?**
 
