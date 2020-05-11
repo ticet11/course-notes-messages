@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Homework May 8, 2020</h1>
+
+        <div class="sections-container">
+            <div class="section modern-JS">
+                <h2>Modern JavaScript</h2>
+
+                <p class="question">What is lodash?</p>
+
+                <p class="answer">
+                    Lodash is a JavaScript library that offers certain
+                    utility functions that are commonly needed in
+                    programming.
+                </p>
+
+                <p class="question">
+                    What is the JavaScript debugger?
+                </p>
+
+                <p class="answer">
+                    The debugger is a tool that allows you to start
+                    and pause a JavaScript function between each step.
+                    It also makes clear the value of certain variables
+                    that are present in the function.
+                </p>
+
+                <p class="question">
+                    How do you create a custom error class in
+                    JavaScript?
+                </p>
+
+                <pre class="answer code">
+                        <code>
+                            class VeryCoolError extends Error {
+                                constructor(errorMessage) {
+                                    super(errorMessage);
+                                    this.name = 'VeryCoolError';
+                                }
+                            }
+                        </code>
+                </pre>
+
+                <p class="question">What is npm?</p>
+
+                <p class="answer">
+                    npm is a software registry. Users can post
+                    sections of code that other users can download and
+                    install within their own system or program.
+                </p>
+
+                <p class="question">What is node?</p>
+
+                <p class="answer">
+                    Node.js is a JavaScript environment, in which you
+                    can run JavaScript, outside of a browser.
+                </p>
+            </div>
+            <div class="section git">
+                <h2>Guide to Git</h2>
+
+                <p class="question">
+                    How do you create a local repository?
+                </p>
+
+                <p class="answer">
+                    Within the terminal, navigate to the root folder
+                    you wish to initialize and use the following
+                    command:
+                </p>
+                <pre class="answer code">
+                    <code>
+                        $ git init
+                    </code>
+                </pre>
+
+                <p class="question">What is github?</p>
+
+                <p class="answer">
+                    GitHub is a git repository hosting service. If
+                    your system crashes, you'll have a backup on
+                    GitHub. It also makes it much easier to have
+                    several people working on the same project by
+                    allowing access to the ropository to other users.
+                </p>
+
+                <p class="question">
+                    How would you push a git repo to github?
+                </p>
+
+                <p class="answer">
+                    You will have initialized a local repository
+                    before attempting this:<br />
+                    1. Select 'New repository' from the '+' dropdown
+                    menu in the top right corner.<br />
+                    <img src="images/repo-create.png" alt="" /><br />
+                    2. Name your repository. (Naming it the same as
+                    the root folder can be a good organizational
+                    decision)<br />
+                    <img
+                        src="images/create-repository-name.png"
+                        alt=""
+                    /><br />
+                    3. Click the 'Create repository' button.<br />
+                    <img
+                        src="images/create-repo-btn.png"
+                        alt=""
+                    /><br />
+                    4. Copy text from this box.<br />
+                    <img src="images/push-repo.png" alt="" /><br />
+                    5. Paste into your terminal and execute.<br />
+                    <img src="images/terminal.png" alt="" />
+                </p>
+
+                <p class="question">
+                    What are the steps to make a git commit?
+                </p>
+
+                <div class="answer code">
+                    <pre>
+                        <code>
+                            $ git add .
+                        </code>
+                    </pre>
+                    <p>Collects all files that have been changed.</p>
+                    <pre>
+                        <code>
+                            $ git commit -m "Put commit message in these quotes."
+                        </code>
+                    </pre>
+                    <p>
+                        Adds a message to all of your files that were
+                        updated since last commit.
+                    </p>
+                </div>
+
+                <p class="question">
+                    How would you hide files from git?
+                </p>
+
+                <p class="answer">
+                    Create a file called '.gitignore'. Within that
+                    file, type the names of all folders and files you
+                    wish to be ignored when you make commits.
+                </p>
+
+                <p class="question">
+                    Why would you want to hide files from git?
+                </p>
+
+                <p class="answer">
+                    Sometimes the files in your program contain
+                    sensitive information or information that is
+                    specific to your system, so you don't want them to
+                    be made public in the repository.
+                </p>
+
+                <p class="question">What does git pull do?</p>
+
+                <p class="answer">
+                    Git pull retrieves the most current repository
+                    from your source and merges it to your currently
+                    selected branch.
+                </p>
+
+                <p class="question">
+                    What is the purpose of git branches?
+                </p>
+
+                <p class="answer">
+                    Creating a new branch allows you to edit files and
+                    save it's data while preserving the master branch,
+                    so you won't lose working versions of the app
+                    while working on different features.
+                </p>
+
+                <p class="question">
+                    How would you push a git branch to github?
+                </p>
+
+                <p class="answer">
+                    As long as you're located in the branch on your
+                    system, when you push as normal you will be
+                    pushing up your branch so that it can be seperatly
+                    accessed.
+                </p>
+
+                <p class="question">
+                    Explain how to merge a remote branch.
+                </p>
+
+                <p class="answer">Merge a remote branch with what?</p>
+
+                <p class="question">What is git rebase?</p>
+
+                <p class="answer">
+                    A git rebase would be used in a situation where
+                    someone created a feature branch. After that
+                    branch was created, the master branch received
+                    another commit. With a rebase you can bring your
+                    feature branch up to date with the master branch
+                    while still keeping it seperate.
+                </p>
+
+                <p class="question">What is git stash?</p>
+
+                <p class="answer">
+                    With git stash, you can checkout of a branch
+                    without commiting in a way that will not bring all
+                    the new data onto a branch it doesn't belong on.
+                </p>
+
+                <p class="question">
+                    What is the difference between git fetch and git
+                    pull?
+                </p>
+
+                <p class="answer">
+                    Git pull automatically merges the retrived version
+                    with your currently active local branch.<br />
+                    Git fetch retrieves the remote version without
+                    merging the two versions.
+                </p>
+
+                <p class="question">What is a merge conflict?</p>
+
+                <p class="answer">
+                    A merge conflict occurs when you try to merge 2
+                    branches when both had the same block of code
+                    edited in different ways.
+                </p>
+
+                <p class="question">
+                    How can a merge conflict occur?
+                </p>
+
+                <p class="answer">
+                    If 2 collaborators were both working on the same
+                    code or if someone was working on the master
+                    branch instead of a seperate feature branch, etc.
+                    It could really happen in a lot of situations
+                    where people aren't careful.
+                </p>
+            </div>
+            <div class="section JS-in-browser">
+                <h2>JavaScript in the Browser</h2>
+
+                <p class="question">What is the DOM?</p>
+
+                <p class="answer">
+                    Document Object Model. Basically a structured
+                    representation of nodes and elements created by
+                    the browser.
+                </p>
+
+                <p class="question">
+                    How would you add a css class with Vanilla
+                    JavaScript?
+                </p>
+
+                <p class="answer">item.classList.add('newClass');</p>
+
+                <p class="question">
+                    How would you remove a css class with Vanilla
+                    JavaScript?
+                </p>
+
+                <p class="answer">
+                    item.classList.remove('oldClass');
+                </p>
+
+                <p class="question">
+                    Explain the differences between the window and the
+                    document for JavaScript development.
+                </p>
+
+                <p class="answer">
+                    The document is loaded within the window object.
+                    The object includes the actual documents being
+                    loaded into the window.
+                </p>
+
+                <p class="question">What are query selectors?</p>
+
+                <p class="answer">
+                    Query secectors allow you to search through your
+                    document with several different properties as
+                    parameters.
+                </p>
+
+                <p class="question">
+                    What are JavaScript event listeners?
+                </p>
+
+                <p class="answer">
+                    Event listeners allow you to select a trigger that
+                    will start different functions, such as if
+                    something is clicked on or is hovered over.
+                </p>
+
+                <p class="question">
+                    What is onclick and what can we use it for?
+                </p>
+
+                <p class="answer">
+                    'onclick' tells the HTML to start a JavaScript
+                    function when the item is clicked.
+                </p>
+
+                <p class="question">
+                    What is the difference between onclick and
+                    addEventListener?
+                </p>
+
+                <p class="answer">
+                    'onclick' is an inline HTML attribute.
+                    'addEventListener' is fully contained in the
+                    JavaScript file.
+                </p>
+
+                <p class="question">
+                    How can you add and remove css styles in vanilla
+                    JavaScript?
+                </p>
+
+                <p class="answer">
+                    Remove a style: 
+                    <pre>
+                        <code>
+                            item.style.removeProperty('property'); 
+                            // or
+                            item.style.setProperty('property', "initial")
+                        </code>
+                    </pre>
+                    Add a style:
+                    <pre>
+                        <code>
+                            item.style.setProperty('property', 'newValue');
+                        </code>
+                    </pre>
+                </p>
+
+                <p class="question">
+                    What is the JavaScript toggle function?
+                </p>
+
+                <p class="answer">The toggle function allows you to use an event listener that will add a class and then remove a class if the event listener is triggered twice. It could be implemented like this:
+                    <pre>
+                        <code>
+                            itemClicked.addEventListener('click', () => {
+                                itemToBeSeen.classList.toggle('classToToggle');
+                            });
+                        </code>
+                    </pre>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
